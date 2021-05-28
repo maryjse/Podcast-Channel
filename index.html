@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Arteaga-Podcast Landing Page</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="flex">
+        <img width="36" src="./assets/logo.svg" alt="logo de la página">
+        <nav>
+            <ul class="desktop-menu flex">
+                <li style="width: 87px">
+                    <a href="#episodes"> EPISODIOS </a>
+                </li>
+                <li style="width: 77px">
+                    <a href="#aboutus"> NOSOTROS </a>
+                </li>
+                <li style="width: 106px">
+                    <a href="#interviews"> ENTREVISTAS </a>
+                </li>
+                <li style="width: 68px">
+                    <a href="#news"> TÓPICOS </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="slide-menu flex">
+            <ul class="mobile-menu">
+                <li>
+                    <a href="#episodes"> EPISODIOS </a>
+                </li>
+                <li>
+                    <a href="#aboutus"> NOSOTROS </a>
+                </li>
+                <li>
+                    <a href="#interviews"> ENTREVISTAS </a>
+                </li>
+                <li>
+                    <a href="#news"> TÓPICOS </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="hello-world">
+            <h1 class="title flex">
+                Hello
+                <span>world</span>
+                <span>pale blue dot</span>
+                <span>.</span>
+            </h1>
+            <p>
+                El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos
+                los jueves cada 15 días.
+            </p>
+            <div class="button">CONOCÉ MÁS</div>
+        </div>
+        <section id="episodes" class="episodes">
+            <h2> Episodios </h2>
+            <div class="iframe-container flex">
+                <div class="flex"> 
+                    <iframe src="https://open.spotify.com/embed/show/2ySVrxGkN6n6frMTo9Nsrt"
+                        height="232" 
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
+                    <iframe src="https://open.spotify.com/embed/episode/3cWta1iiQSfvrdHaCbLkSD"
+                        height="232" 
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
+                </div>
+                <div class="flex">
+                    <iframe src="https://open.spotify.com/embed/episode/1ezdL2ivAGLwSE6Xbssxqt"
+                        height="232" 
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
+                    <iframe src="https://open.spotify.com/embed/episode/5mddqHiI96V0ZMdMidn3WW"
+                        height="232" frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        <section id="aboutus" class="aboutus-container flex">
+            <img src="./assets/phone.png" alt="smartphone con una noticia en pantalla">
+            <div class="aboutus flex">
+                <h2>
+                    De dónde venimos
+                </h2>
+                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+                    the Universe, are challenged by this point of pale light.</p>
+                <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                    vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            </div>
+        </section>
+        <section id="interviews" class="guests flex">
+            <h2>Invitadas/os estelares</h2>
+            <div class="img-container flex"> 
+                <img src="./assets/grace-hopper.png" alt="Grace Hopper">
+                <img src="./assets/Katie-Bouman.png" alt="Katie Bouman">
+                <img src="./assets/Margaret_Hamilton.png" alt="Margaret Hamilton">
+            </div>
+            <div class="img-container flex">
+                <img src="./assets/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Informáticas trabajando en una cumputadora UNIVAC 1103">
+                <img src="./assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Informáticas trabajando en una computadora ENIAC">
+                <img src="./assets/susan-kare.png" alt="Susan Kare">
+            </div>
+        </section>
+        <section class="info flex">
+            <h2> Algunos de nuestros temas</h2>
+            <div class="info-container flex">
+                <div class="flex">
+                    <img height="104" src="./assets/icon1.svg" alt="">
+                    <span>Trabajo remoto</span>
+                </div>
+                <div class="flex">
+                    <img height="104" src="./assets/icon2.svg" alt="">
+                    <span>Repensando la programación</span>
+                </div>
+                <div class="flex">
+                    <img height="104" src="./assets/icon3.svg" alt="">
+                    <span>Bases del código</span>
+                </div>
+                <div class="flex">
+                    <img height="104" src="./assets/icon4.svg" alt="">
+                    <span>Seguridad informática</span>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="lastnews flex">
+            <h2> ¿Querés las últimas novedades? </h2>
+            <div class="button">ESCUCHÁ LOS EPISODIOS</div>
+        </section>
+    </main>
+    <footer class="flex">
+        <p> &#169; 2019— Hello blue pale dot </p>
+        <div class="icons-container flex">
+            <img src="./assets/spotify.svg" alt="spotify">
+            <img src="./assets/instagram.svg" alt="instagram">
+            <img src="./assets/twitter.svg" alt="twitter">
+            <img src="./assets/facebook-circular-logo.svg" alt="facebook">
+            <img src="./assets/telegram.svg" alt="telegram">
+        </div>
+    </footer>
+</body>
+
+</html>
