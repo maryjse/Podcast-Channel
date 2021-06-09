@@ -52,6 +52,9 @@ li, .button, .info-container span, .lastnews h2 {
 .episodes h2:first-child, .aboutus h2, .guests h2, .info h2, .lastnews h2 {
     font-size: 3rem;
 }
+.episodes h2:first-child, .lastnews h2, div.button:hover {
+    color: #FFFFFF;
+}
 .desktop-menu {
     width: 482px;
 }
@@ -100,9 +103,8 @@ li[style] a:active {
     height: 1042.6px;
     clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
 }
-.episodes h2:first-child {
+.episodes h2:first-child, .aboutus-container img {
     margin-left: 13.88vw;
-    color: #FFFFFF;
 }
 .iframe-container {
     height: 536px;
@@ -121,8 +123,7 @@ li[style] a:active {
 iframe {
     width: 40.55vw;
 }
-.aboutus-container img{
-    margin-left: 13.88vw;
+.aboutus-container img {
     position: relative;
     bottom: 168.6px;
     width: 457.6px;
@@ -168,7 +169,6 @@ iframe {
     justify-content: center;
 }
 .lastnews h2 {
-    color: #FFFFFF;
     margin-bottom: 36px;
 }
 footer {
@@ -183,7 +183,6 @@ footer {
     height: 28px;
 }
 div.button:hover {
-    color: #FFFFFF;
     cursor: pointer;
     background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 }
@@ -192,10 +191,7 @@ svg:hover {
 }
 
 @media screen and (max-width: 1020px) {
-    .desktop-menu {
-        display: none;
-    }
-    [type="checkbox"] {
+    .desktop-menu, [type="checkbox"] {
         display: none;
     }
     .burger-container {
