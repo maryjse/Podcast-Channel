@@ -10,8 +10,8 @@
 <body>
     <header class="flex">
         <img width="36" src="./assets/logo.svg" alt="logo de la página">
-        <nav>
-            <ul class="desktop-menu flex">
+        <nav class="desktop-menu">
+            <ul class="flex">
                 <li style="width: 87px">
                     <a href="#episodes"> EPISODIOS </a>
                 </li>
@@ -26,22 +26,24 @@
                 </li>
             </ul>
         </nav>
-        <div class="slide-menu flex">
-            <ul class="mobile-menu">
-                <li>
-                    <a href="#episodes"> EPISODIOS </a>
-                </li>
-                <li>
-                    <a href="#aboutus"> NOSOTROS </a>
-                </li>
-                <li>
-                    <a href="#interviews"> ENTREVISTAS </a>
-                </li>
-                <li>
-                    <a href="#news"> TÓPICOS </a>
-                </li>
-            </ul>
-        </div>
+        <nav class="mobile-menu flex">
+            <input id="burger-menu" type="checkbox" class="custom-checkbox"/>
+            <label for="burger-menu">
+                <div class="burger-container">
+                    <div class="line top-line"></div>
+                    <div class="line middle-line"></div>
+                    <div class="line low-line"></div>
+                </div>
+            </label>
+            <div class="slide-menu">
+                <ul class="flex">
+                    <li> <a href="#episodes"> EPISODIOS </a> </li>
+                    <li> <a href="#aboutus"> NOSOTROS </a> </li>
+                    <li> <a href="#interviews"> ENTREVISTAS </a> </li>
+                    <li> <a href="#news"> TÓPICOS </a> </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="hello-world">
@@ -81,10 +83,12 @@
                         allowtransparency="true" 
                         allow="encrypted-media">
                     </iframe>
-                    <iframe src="https://open.spotify.com/embed/episode/5mddqHiI96V0ZMdMidn3WW"
-                        height="232" frameborder="0" 
+                    <iframe src="https://open.spotify.com/embed/episode/31VyAQAwBiKoHVoYUCEzjQ" 
+                        height="232" 
+                        frameborder="0" 
                         allowtransparency="true" 
                         allow="encrypted-media">
+                </iframe>
                     </iframe>
                 </div>
             </div>
@@ -143,13 +147,22 @@
     <footer class="flex">
         <p> &#169; 2019— Hello blue pale dot </p>
         <div class="icons-container flex">
-            <img src="./assets/spotify.svg" alt="spotify">
-            <img src="./assets/instagram.svg" alt="instagram">
-            <img src="./assets/twitter.svg" alt="twitter">
-            <img src="./assets/facebook-circular-logo.svg" alt="facebook">
-            <img src="./assets/telegram.svg" alt="telegram">
+            <a href="https://www.spotify.com" target="_blank">
+                <img src="./assets/spotify.svg" alt="spotify">
+            </a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                <img src="./assets/instagram.svg" alt="instagram">
+            </a>
+            <a href="https://twitter.com/home" target="_blank">
+                <img src="./assets/twitter.svg" alt="twitter">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="./assets/facebook-circular-logo.svg" alt="facebook">
+            </a>
+            <a href="https://web.telegram.org/#/login" target="_blank">
+                <img src="./assets/telegram.svg" alt="telegram">
+            </a>
         </div>
     </footer>
 </body>
-
 </html>

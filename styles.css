@@ -5,10 +5,10 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    color: #060A24;
 }
 :root {
     font-size: 16px;
-    color: #060A24;
 }
 .flex {
     display: flex;
@@ -22,28 +22,50 @@ li, p, .button {
 li, p {
     font-weight: 600;
 }
-header, ul {
+header, nav.desktop-menu ul, .icons-container, footer, .info-container, .iframe-container div, .aboutus-container {
     justify-content: space-between;
 }
-header {
+header, .iframe-container, .info-container div.flex, .lastnews, footer {
     align-items: center;
+}
+li, .button, .info-container span, .lastnews h2 {
+    text-align: center;
+}
+.title, .iframe-container {
+    flex-wrap: wrap;
+}
+.info-container div.flex, .aboutus, .guests, .info, .lastnews {
+    flex-direction: column;
+}
+.episodes, .lastnews {
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+.info-container	span, .button {
+    font-weight: bolder;
+}
+.episodes h2:first-child, .lastnews h2 {
+    font-weight: 400;
+}
+.hello-world p, .button {
+    line-height: 24px;
+}
+.episodes h2:first-child, .aboutus h2, .guests h2, .info h2, .lastnews h2 {
+    font-size: 3rem;
+}
+.desktop-menu {
+    width: 482px;
+}
+.mobile-menu {
+    display: none;
 }
 header {
     padding: 22px 6.944vw;
 }
-ul {
-    width: 482px;
-}
 li {
-    text-align: center;
     list-style-type: none;
     line-height: 28px;
 }
-.hello-world, section, .info-container div.flex, footer {
-    width: 100vw;
-}
 .title {
-    flex-wrap: wrap;
     font-size: 4rem;
 }
 .hello-world {
@@ -57,7 +79,6 @@ h1 span:last-of-type {
     color: #0000EC;
 }
 .hello-world p {
-    line-height: 24px;
     width: 628px;
     margin-bottom: 56px;
 }
@@ -65,38 +86,31 @@ h1 span:last-of-type {
     display: inline-block;
     background-color: #00F3BB;
     height: 56px;
-    line-height: 24px;
-    font-weight: bolder;
-    text-align: center;
     padding: 16px 59px;
 }
-header .slide-menu, .mobile-menu {
-    display: none;
-    width: 100vw;
-    background-color: blue;
+li[style] a:hover{
+    text-decoration: line-through;
+    color: #00F3BB;
+}
+li[style] a:active {
+    color: #060a246e;
 }
 .episodes {
     padding-top: 191px;
     height: 1042.6px;
-    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
 }
 .episodes h2:first-child {
     margin-left: 13.88vw;
-    font-size: 3rem;
-    font-weight: 400;
     color: #FFFFFF;
 }
 .iframe-container {
     height: 536px;
     margin: 26px 6.94vw 0 6.94vw;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
 }
 .iframe-container div {
     width: 86.11vw;
-    justify-content: space-between;
 }
 .iframe-container div:first-of-type {
     align-self: flex-start;
@@ -106,9 +120,6 @@ header .slide-menu, .mobile-menu {
 }
 iframe {
     width: 40.55vw;
-}
-.aboutus-container {
-    justify-content: space-between;
 }
 .aboutus-container img{
     margin-left: 13.88vw;
@@ -121,10 +132,8 @@ iframe {
     height: fit-content;
     margin-top: 20.01px;
     margin-right: 17.78vw;
-    flex-direction: column;
 }
 .aboutus h2 {
-    font-size: 3rem;
     margin-bottom: 24px;
 }
 .aboutus p {
@@ -135,63 +144,210 @@ iframe {
 }
 .guests {
     margin-top: -64px;
-    width: 100vw;
-    flex-direction: column;
 }
 .guests h2 {
-    width: 33.40vw;
     margin: 0 0 36px 13.88vw;
-    font-size: 3rem;
-    white-space: nowrap;
 }
 .img-container img{
-    width: 33.33vw;
-    height: 364px;
+    width: 33.33%;
 }
 .info {
-    flex-direction: column;
-    padding: 0 13.00vw;
+    padding: 0 13.00vw 34px;
 }
 .info h2 {
     margin: 64px 0 56px 0;
-    font-size: 3rem;
-}
-.info-container div.flex {
-    flex-direction: column;
-    align-items: center;
 }
 .info-container	span {
-    font-weight: bolder;
+    width: 220px;
     padding-top: 29px;
     font-size: 1.5rem;
-    text-align: center;
 }
 .lastnews {
     height: 518px;
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 .lastnews h2 {
-    text-align: center;
-    font-size: 3rem;
     color: #FFFFFF;
-    font-weight: 400;
     margin-bottom: 36px;
 }
 footer {
     padding: 36px 6.94vw 31px;
     background-color: white;
-    align-items: center;
-    justify-content: space-between;
 }
 .icons-container {
-    justify-content: space-between;
     width: 234px;
 }
 .icons-container img {
     width: 18px;
     height: 28px;
+}
+div.button:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+@media screen and (max-width: 1020px) {
+    .desktop-menu {
+        display: none;
+    }
+    [type="checkbox"] {
+        display: none;
+    }
+    .burger-container {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        padding: 1px;
+    }
+    .line {
+        background: black;
+        height: 9%;
+        width: 75%;
+        position: absolute;
+        top: 50%;
+        left: 12.5%;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    .top-line {
+        top: 25%;
+    }
+    .low-line {
+        top: 75%;
+    }
+    .custom-checkbox:checked + label .burger-container .middle-line {
+        opacity: 0;
+    }
+    .custom-checkbox:checked + label .burger-container .top-line {
+        top: 50%;        
+        transform:  rotate(45deg);
+    }
+    .custom-checkbox:checked + label .burger-container .low-line {
+        top: 50%; 
+        transform: rotate(-45deg);  
+    }
+    .mobile-menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 100vw;
+    }
+    div.slide-menu {
+        padding: 16px;
+        width: 100vw;
+        position: fixed;
+        top: 55px;
+        left: 0;
+        background-color: #0000EC;
+        transition: all 1.5s ease;
+        transform: translateX(100vw);
+    }
+    #burger-menu:checked ~ .slide-menu {
+        transform: translateX(0);
+    }
+    div.slide-menu ul {
+        height: 224px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    div.slide-menu ul li a {
+        color: #FFFFFF;
+        font-weight: lighter;
+    }
+    .iframe-container div.flex, iframe, .aboutus-container img, div.aboutus p, div.icons-container {
+        width: 100%;
+    }
+    header.flex {
+        padding: 10px 16px;
+    }
+    .hello-world, .aboutus-container, .iframe-container div.flex, .img-container, .info-container, .lastnews, footer, div.slide-menu ul {
+        flex-direction: column;
+    }
+    .title, .episodes h2:first-child, div.aboutus h2, section.guests h2:first-child, section.info h2, section.lastnews h2 {
+        font-size: 2.25rem;
+    }
+    .episodes h2:first-child, .iframe-container, .aboutus-container img:first-child, .aboutus-container div.aboutus, div.aboutus h2, section.guests h2:first-child, section.info h2 {
+        margin: 0;
+    }
+    .hello-world p, div.aboutus p, footer.flex p {
+        font-size: 0.875rem;
+    }
+    .episodes, section.lastnews {
+        padding: 0 16px;
+    }
+    .hello-world {
+        padding: 29px 16px 24px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .title {
+        width: 69.38vw;
+        padding-bottom: 16px;
+    }
+    .hello-world p {
+        width: 90vw;
+        padding-bottom: -20px;
+    }
+    .episodes {
+        height: 1250px;
+        clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+    }
+    .episodes h2:first-child {
+        padding: 64px 0 21px;
+    }
+    .iframe-container {
+        height: 961px;
+    }
+    .iframe-container div.flex {
+        height: 475px;
+    }
+    .aboutus-container img {
+        height: 100%;
+    }
+    .aboutus-container img:first-child {
+        bottom: 80px;
+    }
+    .aboutus-container div.aboutus {
+        margin-top: -53px;
+        padding: 0 16px 54px;
+    }
+    div.aboutus h2 {
+        padding-bottom: 8px;
+    }
+    section.guests h2:first-child {
+        padding: 54px 16px 14px;
+    }
+    div.img-container img {
+        width: 100vw;
+    }
+    section.info {
+        padding: 48px 16px 42px;
+    }
+    section.info div.info-container {
+        height: 886px;
+        padding-top: 24px;
+        justify-content: space-evenly;
+    }
+    div.flex span {
+        padding-top: 13px;
+    }
+    section.lastnews {
+        clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+        height: 341px;
+    }
+    section.lastnews div.button {
+        padding: 13px 43px;
+        line-height: 30px;
+    }
+    footer.flex {
+        padding: 24px 45px;
+    }
+    footer.flex p {
+        margin-bottom: 16px;
+    }
+    div.icons-container img {
+        width: 16px;
+    }
 }
