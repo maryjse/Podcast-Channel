@@ -178,7 +178,7 @@ footer {
 .icons-container {
     width: 234px;
 }
-.icons-container img {
+.icons-container svg {
     width: 18px;
     height: 28px;
 }
@@ -186,6 +186,9 @@ div.button:hover {
     color: #FFFFFF;
     cursor: pointer;
     background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+svg:hover {
+    fill: #00F3BB;
 }
 
 @media screen and (max-width: 1020px) {
@@ -238,13 +241,12 @@ div.button:hover {
         width: 100vw;
         position: fixed;
         top: 55px;
-        left: 0;
+        left: 100vw;
         background-color: #0000EC;
-        transition: all 1.5s ease;
-        transform: translateX(100vw);
+        transition: all 1s ease;
     }
     #burger-menu:checked ~ .slide-menu {
-        transform: translateX(0);
+        transform: translateX(-100vw);
     }
     div.slide-menu ul {
         height: 224px;
@@ -347,7 +349,7 @@ div.button:hover {
     footer.flex p {
         margin-bottom: 16px;
     }
-    div.icons-container img {
+    div.icons-container svg {
         width: 16px;
     }
 }
